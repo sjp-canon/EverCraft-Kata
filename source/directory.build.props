@@ -1,0 +1,14 @@
+﻿<Project>
+  <Import Project="../directory.build.props"/>
+
+  <PropertyGroup>
+    <OutputPath>$(SolutionDir)source\Output\$(Configuration)</OutputPath>
+    <DocumentationFile>$(SolutionDir)source\Output\$(Configuration)\(MSBuildProjectName).xml</DocumentationFile>
+    <CodeAnalysisRuleSet>$(SolutionDir)EverCraft.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
+    <AdditionalFiles Include="$(SolutionDir)stylecop.json" />
+  </ItemGroup>
+</Project>

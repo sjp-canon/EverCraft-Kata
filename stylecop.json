@@ -1,0 +1,24 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "documentationRules": {
+      "companyName": "Blizzards of the Coast",
+      "copyrightText": "© 2019, Blizzards of the Coast. All rights reserved.\nLicensed under the {licenseName} license. See {licenseFile} in the project root for full license information.",
+      "headerDecoration": "---------------------------------------------------------------------------------------------",
+      "variables": {
+        "licenseName": "MIT",
+        "licenseFile": "LICENSE"
+      },
+      "documentInternalElements": false
+    },
+    "orderingRules": {
+      "blankLinesBetweenUsingGroups": "require"
+    },
+    "namingRules": {
+      "allowCommonHungarianPrefixes": false
+    },
+    "maintainabilityRules": {
+      "topLevelTypes": [ "class", "enum", "interface", "struct" ]
+    }
+  }
+}

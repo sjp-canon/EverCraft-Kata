@@ -1,0 +1,40 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Company>Blizzards of the Coast</Company>
+    <Copyright>© 2019, Blizzards of the Coast. All rights reserved.</Copyright>
+    <Authors>Seth Jacobson, Jacob Hasenau</Authors>
+    <Major>1</Major>
+    <Minor>0</Minor>
+    <Build>0</Build>
+    <Revision>0</Revision>
+    <Version>$(Major).$(Minor).$(Build)</Version>
+    <AssemblyVersion>$(Major).$(Minor).$(Build)</AssemblyVersion>
+    <FileVersion>$(Major).$(Minor).$(Build).$(Revision)</FileVersion>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(Configuration)=='Debug'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(Configuration)=='Release'">
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.CSharp" Version="4.6.0" />
+    <PackageReference Update="Microsoft.Net.Compilers" Version="3.3.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
