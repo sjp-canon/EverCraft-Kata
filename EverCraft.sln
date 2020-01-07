@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EverCraft", "EverCraft\EverCraft.csproj", "{57FD2534-9334-4B68-90C7-C9F178E868CA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".root", ".root", "{12974158-0340-41BA-B919-CAF0F6D27F8F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		directory.build.props = directory.build.props
+		EverCraft.ruleset = EverCraft.ruleset
+		LICENSE.md = LICENSE.md
+		README.markdown = README.markdown
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{B43736DE-2D36-4D25-A6A7-9BBEDD3E3EB7}"
+	ProjectSection(SolutionItems) = preProject
+		source\directory.build.props = source\directory.build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{36BB00AC-CC33-4F00-B5AC-1EBDC6EAA716}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EverCraft", "source\EverCraft\EverCraft.csproj", "{6BA90B3F-7502-4FA7-8178-10544556B00E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +29,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{57FD2534-9334-4B68-90C7-C9F178E868CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57FD2534-9334-4B68-90C7-C9F178E868CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57FD2534-9334-4B68-90C7-C9F178E868CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57FD2534-9334-4B68-90C7-C9F178E868CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA90B3F-7502-4FA7-8178-10544556B00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA90B3F-7502-4FA7-8178-10544556B00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA90B3F-7502-4FA7-8178-10544556B00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA90B3F-7502-4FA7-8178-10544556B00E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6BA90B3F-7502-4FA7-8178-10544556B00E} = {B43736DE-2D36-4D25-A6A7-9BBEDD3E3EB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {254E9764-4B75-4998-A4DD-E9E263A1B9BE}
